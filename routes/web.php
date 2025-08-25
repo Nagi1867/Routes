@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::match(['get', 'post'], 'users', function() {
+    return 'Hello world';
 });
+
