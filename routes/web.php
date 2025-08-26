@@ -7,3 +7,8 @@ Route::domain('{user}.cursolaravelpro.test')->group(function () {
         return $user;
     });
 });
+
+
+Route::fallback(function() {
+    return 'Hello World';
+});
