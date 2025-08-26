@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('user')->name('user.')->group(function () {
+Route::middleware('policia-federal')->group(function () {
     Route::get('', function () {
         return 'Hello world';
     })->name('users');
